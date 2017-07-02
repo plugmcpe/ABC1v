@@ -15,7 +15,7 @@ public function onEnable(){
     public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
      switch ($cmd->getName()){
       case '1':
-       $player = $sender->setGamemode(1);
+       $player = $sender->getPlayer();
        $player->setGamemode(1);
         break;
         }
